@@ -16,11 +16,26 @@ body {
     align-items: center;
 }
 
-#gameboard {
-    border: 2px solid black;
-    height: 800px;
-    width: 800px;
+.game-container {
     display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameboard {
+    border: 2px solid black;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    margin: 4rem;
+}
+
+.game-stats {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .game-column {
@@ -30,8 +45,19 @@ body {
 }
 
 .game-piece {
-    background-color: lightgray;
     border-radius: 5px;
     border: 2px solid black;
     flex: auto;
+}
+
+.filled-piece {
+    background-color: lightgray;
+}
+
+.missed-piece {
+    background-color: lightblue;
+}
+
+.hit-piece {
+    background-color: red;
 }

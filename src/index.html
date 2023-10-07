@@ -5,18 +5,41 @@
         <title>Battleship</title>
     </head>
     <body>
+        <div class="game-container">
+            <div class="gameboard" id="game1"></div>
+            <div class="gameboard" id="game2"></div>
+        </div>
 
-        <div id="gameboard">
-            <div class="game-column">
-                <div class="game-piece">p</div>
-                <div class="game-piece"></div>
+
+        <div class="game-stats">
+                        <div class="start">
+                            <button id="start-button">Start</button>
+                        </div>
+            <div class="name-container">
+                <p>Player Name</p>
+                <input type="text" id="player-name-input">
             </div>
-            <div class="game-column"></div>
-            <div class="game-column"></div>
-            <div class="game-column"></div>
-            <div class="game-column"></div>
-            <div class="game-column"></div>
-            <div class="game-column"></div>
+            <div class="board-size-container">
+                <p>Board Size</p>
+                <input type="text" id="board-size-input">
+            </div>
+            <div class="ship-stats-container">
+                <p>Ship Size</p>
+                <input type="text" id="ship-size-input">
+                <p>Ship Direction</p>
+                <input type="text" id="ship-direction-input">
+                <p>Ship Location X and Y</p>
+                <input type="text" id="ship-loc-x">
+                <input type="text" id="ship-loc-y">
+                <button id="ship-add-button">Submit</button>
+            </div>
+            <div class="hit-container">
+                <p>Hit location X and Y</p>
+                <input type="text" id="hit-loc-x">
+                <input type="text" id="hit-loc-y">
+                <button id="hit-button">Submit</button>
+            </div>
+
         </div>
 
     </body>
